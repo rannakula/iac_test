@@ -33,3 +33,12 @@ resource "aws_s4_bucket" "mfadelete4" {
     mfa_delete = true
   }
 }
+
+resource "aws_s5_bucket" "mfadelete5" {
+  bucket = "examplebuckettftest5"
+  acl    = "private"
+  versioning {
+    enabled = true
+    mfa_delete = true
+  }
+}
